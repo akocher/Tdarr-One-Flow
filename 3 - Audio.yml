@@ -5,6 +5,222 @@
   "tags": "",
   "flowPlugins": [
     {
+      "name": "Audio - Encode - Check if ac3 - 1ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "inputsDB": {
+        "codec": "ac3",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff}}}",
+        "lessThan": "999999999"
+      },
+      "fpEnabled": true,
+      "id": "zmPD_WPlt",
+      "position": {
+        "x": 3996,
+        "y": 3060
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if mp2 - 1ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "inputsDB": {
+        "codec": "mp2",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff}}}",
+        "lessThan": "999999999"
+      },
+      "fpEnabled": true,
+      "id": "nojOeTu7v",
+      "position": {
+        "x": 4068,
+        "y": 3180
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if mp2- 2ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "inputsDB": {
+        "codec": "mp2",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_2}}}",
+        "lessThan": "999999999"
+      },
+      "fpEnabled": true,
+      "id": "_uTAAEy0r",
+      "position": {
+        "x": 3048,
+        "y": 3132
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if ac3 - 2ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "inputsDB": {
+        "codec": "ac3",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_2}}}",
+        "lessThan": "999999999"
+      },
+      "fpEnabled": true,
+      "id": "W5UlgCm1X",
+      "position": {
+        "x": 2976,
+        "y": 3048
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if mp2 - 6ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "inputsDB": {
+        "codec": "mp2",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_6}}}",
+        "lessThan": "999999999"
+      },
+      "fpEnabled": true,
+      "id": "n1d280_Mf",
+      "position": {
+        "x": 1836,
+        "y": 2988
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if ac3 - 6ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "inputsDB": {
+        "codec": "ac3",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_6}}}",
+        "lessThan": "999999999"
+      },
+      "fpEnabled": true,
+      "id": "j6EVoCtmB",
+      "position": {
+        "x": 1764,
+        "y": 2844
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if eac3 - 1ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "inputsDB": {
+        "codec": "eac3",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff}}}",
+        "lessThan": "999999999"
+      },
+      "fpEnabled": true,
+      "id": "FUW6OAXBq",
+      "position": {
+        "x": 3924,
+        "y": 2952
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if eac3 - 2ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "inputsDB": {
+        "codec": "eac3",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_2}}}",
+        "lessThan": "999999999"
+      },
+      "fpEnabled": true,
+      "id": "h2Mb0Vs27",
+      "position": {
+        "x": 2904,
+        "y": 2964
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if eac3 - 6ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "inputsDB": {
+        "codec": "eac3",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_6}}}",
+        "lessThan": "999999999"
+      },
+      "fpEnabled": true,
+      "id": "EznYY0ZNO",
+      "position": {
+        "x": 1692,
+        "y": 2748
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if mp2 - 8ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "inputsDB": {
+        "codec": "mp2",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_8}}}",
+        "lessThan": "999999999"
+      },
+      "fpEnabled": true,
+      "id": "F3BstDsMD",
+      "position": {
+        "x": 456,
+        "y": 2904
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if ac3 - 8ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "inputsDB": {
+        "codec": "ac3",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_8}}}",
+        "lessThan": "999999999"
+      },
+      "fpEnabled": true,
+      "id": "pjYAuZmpT",
+      "position": {
+        "x": 384,
+        "y": 2784
+      }
+    },
+    {
+      "name": "Audio - Encode - Check if eac3 - 8ch 🔍",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "inputsDB": {
+        "codec": "eac3",
+        "checkBitrate": "true",
+        "greaterThan": " {{{args.variables.bitrate_audio_cutoff_8}}}",
+        "lessThan": "999999999"
+      },
+      "fpEnabled": true,
+      "id": "8TEgDjlor",
+      "position": {
+        "x": 312,
+        "y": 2652
+      }
+    },
+    {
       "name": "Audio - Clean - Go to Flow - Error Remove Track ➡️",
       "sourceRepo": "Community",
       "pluginName": "goToFlow",
@@ -13,36 +229,36 @@
         "flowId": "TcG_OWsAi",
         "pluginId": "cpvMZJdoY"
       },
+      "fpEnabled": true,
       "id": "ie0ITMYKV",
       "position": {
         "x": 1290.6037526508871,
         "y": 1040.7987388105148
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "ℹ️ We Check for Library Variable to see if you want to clean audio or not",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "FE2h_IOxe",
       "position": {
         "x": 381.806463777129,
         "y": -119.68393880780657
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - do_audio_encode ℹ️",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "pNuQrkOTp",
       "position": {
         "x": 266.16722527977015,
         "y": 1228.3745196484713
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Go to Flow - do_audio_encode ➡️",
@@ -53,12 +269,12 @@
         "flowId": "TcG_OWsAi",
         "pluginId": "pNuQrkOTp"
       },
+      "fpEnabled": true,
       "id": "wy56g34IU",
       "position": {
         "x": 696.8489458405908,
         "y": -30.398348864289357
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Check var do_audio_clean 🔍",
@@ -69,204 +285,204 @@
         "variable": "{{{args.userVariables.library.do_audio_clean}}}",
         "value": "true"
       },
+      "fpEnabled": true,
       "id": "K02RcF2UK",
       "position": {
         "x": 578.7509768519458,
         "y": -118.59754840194705
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Custom JS Calculate is_audio_lossless Error ⚠️",
       "sourceRepo": "Community",
       "pluginName": "resetFlowError",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "90XvoVKK_",
       "position": {
         "x": 349.00845063224733,
         "y": 1833.8860330375007
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Custom JS Calculate bitrate_audio Error ⚠️",
       "sourceRepo": "Community",
       "pluginName": "resetFlowError",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "wWVvBYYaN",
       "position": {
         "x": 347.99889725728053,
         "y": 1729.0236994812028
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "ℹ️ Need to improve error flow when codecs error out or aren't found",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "GQgYPPuCn",
       "position": {
         "x": -200.30338087829796,
         "y": 2676.413837706146
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - MKVPropEdit Error! ⚠️",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "fVUGrG3KK",
       "position": {
-        "x": 902.2637210811973,
-        "y": 3997.4756736275867
-      },
-      "fpEnabled": true
+        "x": 888,
+        "y": 4848
+      }
     },
     {
       "name": "Audio - Encode Error! Skipping Audio Encode ⚠️",
       "sourceRepo": "Community",
       "pluginName": "resetFlowError",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "e7lfImqz4",
       "position": {
-        "x": 901.7368632119103,
-        "y": 3907.5454643764424
-      },
-      "fpEnabled": true
+        "x": 888,
+        "y": 4752
+      }
     },
     {
       "name": "Audio - MKVPropEdit OK! ✅",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "RdB4YXh8J",
       "position": {
-        "x": 716.6439150706793,
-        "y": 3997.882791834348
-      },
-      "fpEnabled": true
+        "x": 708,
+        "y": 4848
+      }
     },
     {
       "name": "Audio - File is mkv ✅",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "MSw1f7keb",
       "position": {
-        "x": 868.620944635905,
-        "y": 3779.547287342147
-      },
-      "fpEnabled": true
+        "x": 852,
+        "y": 4620
+      }
     },
     {
       "name": "Audio - Clean - Removed Tracks ✅",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "0022sTONL",
       "position": {
         "x": 767.4249612259721,
         "y": 918.0163316269699
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Removed Tracks ✅",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "WR1Lag2Ls",
       "position": {
         "x": 489.817389882656,
         "y": 797.925258332505
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Removed Tracks ✅",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "9vG4bGFyK",
       "position": {
         "x": 213.71715344889844,
         "y": 657.4851637590019
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Nothing Processed ⚠️",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "aKqpG5jAZ",
       "position": {
         "x": 917.7794952091433,
         "y": 917.4471642426014
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Nothing Processed ⚠️",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "JjxNJV9ga",
       "position": {
         "x": 640.7254181185895,
         "y": 797.7115764783505
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Nothing Processed ⚠️",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "9_Y4Ql07p",
       "position": {
         "x": 362.4984276168125,
         "y": 657.5145243831323
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Can't determine Codec Type - Skipping Audio Encode ⚠️",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "dgVClMici",
       "position": {
-        "x": 1879.8452356477007,
-        "y": 2471.0322163968635
-      },
-      "fpEnabled": true
+        "x": 4548,
+        "y": 2436
+      }
     },
     {
       "name": "ℹ️ If encode succeeds, remove all other audio tracks.\nBe aware of vids with multiple language tracks that you wish to keep!",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "tDB-jLovY",
       "position": {
-        "x": 645.834146031548,
-        "y": 3505.4193595229217
-      },
-      "fpEnabled": true
+        "x": 636,
+        "y": 4356
+      }
     },
     {
       "name": "ℹ️ We try to keep the highest channel audio codec only.\nWill add a way to add compatibility track in the future",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "pFlIVyaSE",
       "position": {
         "x": -201.58640123477582,
         "y": 2157.4637410510613
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Go to Flow - 4 Video ➡️",
@@ -277,96 +493,96 @@
         "flowId": "px3PqFxVL",
         "pluginId": "2OlpiKQ6y"
       },
+      "fpEnabled": true,
       "id": "Ndw7h1SEI",
       "position": {
-        "x": 991.383881961684,
-        "y": 4198.836105744239
-      },
-      "fpEnabled": true
+        "x": 972,
+        "y": 5040
+      }
     },
     {
       "name": "Audio - Can't determine Codec Type - Skipping Audio Encode ⚠️",
       "sourceRepo": "Community",
       "pluginName": "resetFlowError",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "OrR0rXBi-",
       "position": {
-        "x": 412.0191449765105,
-        "y": 2688.9376184792945
-      },
-      "fpEnabled": true
+        "x": 1044,
+        "y": 3084
+      }
     },
     {
       "name": "Audio - Can't determine Codec Type - Skipping Audio Encode ⚠️",
       "sourceRepo": "Community",
       "pluginName": "resetFlowError",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "Ka4bqB3zT",
       "position": {
-        "x": 913.874691676506,
-        "y": 2760.2068469738624
-      },
-      "fpEnabled": true
+        "x": 2268,
+        "y": 3180
+      }
     },
     {
       "name": "Audio - Can't determine Codec Type - Skipping Audio Encode ⚠️",
       "sourceRepo": "Community",
       "pluginName": "resetFlowError",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "YnarcMR5F",
       "position": {
-        "x": 1389.8586929024173,
-        "y": 2852.073473003004
-      },
-      "fpEnabled": true
+        "x": 3300,
+        "y": 3288
+      }
     },
     {
       "name": "Audio - Nothing to process ✅",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "LEWyqEPjw",
       "position": {
-        "x": 966.4629931788627,
-        "y": 3617.5226423121735
-      },
-      "fpEnabled": true
+        "x": 948,
+        "y": 4464
+      }
     },
     {
       "name": "Audio - Removed all but opus! ✅",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "pUJx60xNJ",
       "position": {
-        "x": 812.1424528963587,
-        "y": 3618.4830719198508
-      },
-      "fpEnabled": true
+        "x": 804,
+        "y": 4464
+      }
     },
     {
       "name": "Audio - Can't determine Codec Type - Skipping Audio Encode ⚠️",
       "sourceRepo": "Community",
       "pluginName": "resetFlowError",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "ao4PhBnkx",
       "position": {
-        "x": 1880.8559652852068,
-        "y": 2945.4064989995113
-      },
-      "fpEnabled": true
+        "x": 4548,
+        "y": 3372
+      }
     },
     {
       "name": "Audio - No Opus but Encoded, something is wrong.  Flag for Review! 🚨",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "S4iThhPvh",
       "position": {
-        "x": 1132.2716325618946,
-        "y": 3437.0105008609066
-      },
-      "fpEnabled": true
+        "x": 1116,
+        "y": 4284
+      }
     },
     {
       "name": "Audio - Go to Flow - 4 Video ➡️",
@@ -377,36 +593,36 @@
         "flowId": "px3PqFxVL",
         "pluginId": "2OlpiKQ6y"
       },
+      "fpEnabled": true,
       "id": "nppyT7nft",
       "position": {
-        "x": 1190.2013465423538,
-        "y": 3309.1982359471217
-      },
-      "fpEnabled": true
+        "x": 1176,
+        "y": 4152
+      }
     },
     {
       "name": "Audio - Opus Exists! ✅",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "uVvEH-f46",
       "position": {
-        "x": 892.8456190241286,
-        "y": 3442.2404027733505
-      },
-      "fpEnabled": true
+        "x": 876,
+        "y": 4284
+      }
     },
     {
       "name": "Audio - Encode Done! ✅",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "LTmW8nMkk",
       "position": {
-        "x": 1022.1468227793471,
-        "y": 3272.453536088047
-      },
-      "fpEnabled": true
+        "x": 1008,
+        "y": 4116
+      }
     },
     {
       "name": "Audio - Go to Flow - 4 Video ➡️",
@@ -417,12 +633,12 @@
         "flowId": "px3PqFxVL",
         "pluginId": "2OlpiKQ6y"
       },
+      "fpEnabled": true,
       "id": "0PImCv_dl",
       "position": {
-        "x": 1787.6554918371414,
-        "y": 3150.1971384035805
-      },
-      "fpEnabled": true
+        "x": 4344,
+        "y": 3612
+      }
     },
     {
       "name": "Audio - Go to Flow - 4 Video ➡️",
@@ -433,12 +649,12 @@
         "flowId": "px3PqFxVL",
         "pluginId": "2OlpiKQ6y"
       },
+      "fpEnabled": true,
       "id": "TZ43h2TCm",
       "position": {
-        "x": 1307.666378633418,
-        "y": 3054.526692071625
-      },
-      "fpEnabled": true
+        "x": 3216,
+        "y": 3492
+      }
     },
     {
       "name": "Audio - Go to Flow - 4 Video ➡️",
@@ -449,12 +665,12 @@
         "flowId": "px3PqFxVL",
         "pluginId": "2OlpiKQ6y"
       },
+      "fpEnabled": true,
       "id": "IVLs-jkma",
       "position": {
-        "x": 827.9097320959075,
-        "y": 3003.604509103138
-      },
-      "fpEnabled": true
+        "x": 2268,
+        "y": 3420
+      }
     },
     {
       "name": "Audio - Go to Flow - 4 Video ➡️",
@@ -465,24 +681,24 @@
         "flowId": "px3PqFxVL",
         "pluginId": "2OlpiKQ6y"
       },
+      "fpEnabled": true,
       "id": "dCf7Tob69",
       "position": {
-        "x": 330.8223177783911,
-        "y": 2969.5279306122306
-      },
-      "fpEnabled": true
+        "x": 1044,
+        "y": 3240
+      }
     },
     {
       "name": "Audio - Source bitrate too low - Skipping Audio Encode ℹ️",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "dwAqcaYPH",
       "position": {
-        "x": 1787.7732205514365,
-        "y": 3045.7312981851933
-      },
-      "fpEnabled": true
+        "x": 4344,
+        "y": 3432
+      }
     },
     {
       "name": "Audio - Encode - Encode in libopus - 1ch 📼",
@@ -492,12 +708,12 @@
       "inputsDB": {
         "outputArguments": "-c:v copy -c:a:0 libopus -b:a {{{args.variables.bitrate_audio_2}}} -ac 1"
       },
+      "fpEnabled": true,
       "id": "O_9LOpNF0",
       "position": {
-        "x": 1504.1259893215672,
-        "y": 3038.5573595929613
-      },
-      "fpEnabled": true
+        "x": 3528,
+        "y": 3816
+      }
     },
     {
       "name": "Audio - Check if is_audio_lossless 🔍",
@@ -508,12 +724,12 @@
         "variable": " {{{args.variables.is_audio_lossless}}}",
         "value": "true"
       },
+      "fpEnabled": true,
       "id": "SgeLsQHv3",
       "position": {
-        "x": 1762.731909908683,
-        "y": 2902.8964889948998
-      },
-      "fpEnabled": true
+        "x": 4140,
+        "y": 3288
+      }
     },
     {
       "name": "Audio - Encode - Check if wav - 1ch 🔍",
@@ -526,12 +742,12 @@
         "greaterThan": " {{{args.variables.bitrate_audio_cutoff}}}",
         "lessThan": "999999999"
       },
+      "fpEnabled": true,
       "id": "FdEKIRBzk",
       "position": {
-        "x": 1708.319076704961,
-        "y": 2816.8447745765197
-      },
-      "fpEnabled": true
+        "x": 3852,
+        "y": 2856
+      }
     },
     {
       "name": "Audio - Encode - Check if flac - 1ch 🔍",
@@ -544,12 +760,12 @@
         "greaterThan": " {{{args.variables.bitrate_audio_cutoff}}}",
         "lessThan": "999999999"
       },
+      "fpEnabled": true,
       "id": "0-3aRjaYS",
       "position": {
-        "x": 1649.5807628626499,
-        "y": 2732.515684481725
-      },
-      "fpEnabled": true
+        "x": 3780,
+        "y": 2760
+      }
     },
     {
       "name": "Audio - Encode - Check if TrueHD - 1ch 🔍",
@@ -562,12 +778,12 @@
         "greaterThan": " {{{args.variables.bitrate_audio_cutoff}}}",
         "lessThan": "999999999"
       },
+      "fpEnabled": true,
       "id": "GM1sHEBTo",
       "position": {
-        "x": 1588.9699531969861,
-        "y": 2647.56242911248
-      },
-      "fpEnabled": true
+        "x": 3708,
+        "y": 2676
+      }
     },
     {
       "name": "Audio - Encode - Check if dts - 1ch 🔍",
@@ -580,12 +796,12 @@
         "greaterThan": " {{{args.variables.bitrate_audio_cutoff}}}",
         "lessThan": "999999999"
       },
+      "fpEnabled": true,
       "id": "4J4dDJ3Tn",
       "position": {
-        "x": 1528.9833088057733,
-        "y": 2558.86418209653
-      },
-      "fpEnabled": true
+        "x": 3636,
+        "y": 2568
+      }
     },
     {
       "name": "Audio - Encode - Check if dca - 1ch 🔍",
@@ -598,24 +814,24 @@
         "greaterThan": " {{{args.variables.bitrate_audio_cutoff}}}",
         "lessThan": "999999999"
       },
+      "fpEnabled": true,
       "id": "_I4ev8nP_",
       "position": {
-        "x": 1470.8823391364763,
-        "y": 2472.0578501516407
-      },
-      "fpEnabled": true
+        "x": 3552,
+        "y": 2496
+      }
     },
     {
       "name": "Audio - Source bitrate too low - Skipping Audio Encode ℹ️",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "QMbEsJCYP",
       "position": {
-        "x": 1307.8559940127157,
-        "y": 2955.178592085505
-      },
-      "fpEnabled": true
+        "x": 3216,
+        "y": 3384
+      }
     },
     {
       "name": "Audio - Check if is_audio_lossless 🔍",
@@ -626,12 +842,12 @@
         "variable": " {{{args.variables.is_audio_lossless}}}",
         "value": "true"
       },
+      "fpEnabled": true,
       "id": "dzcqBzIai",
       "position": {
-        "x": 1282.3304382058182,
-        "y": 2809.7191590208245
-      },
-      "fpEnabled": true
+        "x": 3120,
+        "y": 3252
+      }
     },
     {
       "name": "Audio - Encode - Check if wav - 2ch 🔍",
@@ -644,12 +860,12 @@
         "greaterThan": " {{{args.variables.bitrate_audio_cutoff_2}}}",
         "lessThan": "999999999"
       },
+      "fpEnabled": true,
       "id": "v6DjtYFVh",
       "position": {
-        "x": 1222.861020870929,
-        "y": 2725.4991696408656
-      },
-      "fpEnabled": true
+        "x": 2832,
+        "y": 2880
+      }
     },
     {
       "name": "Audio - Encode - Check if flac - 2ch 🔍",
@@ -662,12 +878,12 @@
         "greaterThan": " {{{args.variables.bitrate_audio_cutoff_2}}}",
         "lessThan": "999999999"
       },
+      "fpEnabled": true,
       "id": "MCWHs2fBd",
       "position": {
-        "x": 1162.3096765040202,
-        "y": 2639.3231318114645
-      },
-      "fpEnabled": true
+        "x": 2772,
+        "y": 2796
+      }
     },
     {
       "name": "Audio - Encode - Check if TrueHD - 2ch 🔍",
@@ -680,12 +896,12 @@
         "greaterThan": " {{{args.variables.bitrate_audio_cutoff_2}}}",
         "lessThan": "999999999"
       },
+      "fpEnabled": true,
       "id": "FE22r5Yyl",
       "position": {
-        "x": 1104.0569073483232,
-        "y": 2554.9588795762866
-      },
-      "fpEnabled": true
+        "x": 2712,
+        "y": 2712
+      }
     },
     {
       "name": "Audio - Encode - Check if dts - 2ch 🔍",
@@ -698,12 +914,12 @@
         "greaterThan": " {{{args.variables.bitrate_audio_cutoff_2}}}",
         "lessThan": "999999999"
       },
+      "fpEnabled": true,
       "id": "VYZRFs3Rp",
       "position": {
-        "x": 1046.6462124625436,
-        "y": 2470.1962445392573
-      },
-      "fpEnabled": true
+        "x": 2652,
+        "y": 2628
+      }
     },
     {
       "name": "Audio - Encode - Encode in libopus - 2ch 📼",
@@ -713,12 +929,12 @@
       "inputsDB": {
         "outputArguments": "-c:v copy -c:a:0 libopus -b:a {{{args.variables.bitrate_audio_2}}} -ac 2"
       },
+      "fpEnabled": true,
       "id": "F2U_8EH4S",
       "position": {
-        "x": 1020.4835939840011,
-        "y": 3042.4093267124485
-      },
-      "fpEnabled": true
+        "x": 2580,
+        "y": 3600
+      }
     },
     {
       "name": "Audio - Encode - Check if dca - 2ch 🔍",
@@ -731,24 +947,24 @@
         "greaterThan": " {{{args.variables.bitrate_audio_cutoff_2}}}",
         "lessThan": "999999999"
       },
+      "fpEnabled": true,
       "id": "h21X_I2Wu",
       "position": {
-        "x": 989.1249286389511,
-        "y": 2383.7012692646167
-      },
-      "fpEnabled": true
+        "x": 2604,
+        "y": 2544
+      }
     },
     {
       "name": "Audio - Source bitrate too low - Skipping Audio Encode ℹ️",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "IGLmyMWoA",
       "position": {
-        "x": 827.3711136464473,
-        "y": 2918.9084980827865
-      },
-      "fpEnabled": true
+        "x": 1980,
+        "y": 3216
+      }
     },
     {
       "name": "Audio - Encode - Encode in libopus - 6ch 📼",
@@ -758,12 +974,12 @@
       "inputsDB": {
         "outputArguments": "-c:v copy -c:a:0 libopus -b:a {{{args.variables.bitrate_audio_6}}} -ac 6 "
       },
+      "fpEnabled": true,
       "id": "lbj9YbACM",
       "position": {
-        "x": 533.9538524216098,
-        "y": 3039.1842063089393
-      },
-      "fpEnabled": true
+        "x": 1296,
+        "y": 3444
+      }
     },
     {
       "name": "Audio - Check if is_audio_lossless 🔍",
@@ -774,12 +990,12 @@
         "variable": " {{{args.variables.is_audio_lossless}}}",
         "value": "true"
       },
+      "fpEnabled": true,
       "id": "2HfCSkIVo",
       "position": {
-        "x": 801.9699726657892,
-        "y": 2716.909337239615
-      },
-      "fpEnabled": true
+        "x": 1908,
+        "y": 3096
+      }
     },
     {
       "name": "Audio - Encode - Check if wav - 6ch 🔍",
@@ -792,12 +1008,12 @@
         "greaterThan": " {{{args.variables.bitrate_audio_cutoff_6}}}",
         "lessThan": "999999999"
       },
+      "fpEnabled": true,
       "id": "rbk3cxOri",
       "position": {
-        "x": 742.6455559263632,
-        "y": 2632.2624744566897
-      },
-      "fpEnabled": true
+        "x": 1572,
+        "y": 2640
+      }
     },
     {
       "name": "Audio - Encode - Check if flac - 6ch 🔍",
@@ -810,12 +1026,12 @@
         "greaterThan": " {{{args.variables.bitrate_audio_cutoff_6}}}",
         "lessThan": "999999999"
       },
+      "fpEnabled": true,
       "id": "iVuMg_bBq",
       "position": {
-        "x": 681.0416746656939,
-        "y": 2546.0392337059766
-      },
-      "fpEnabled": true
+        "x": 1512,
+        "y": 2556
+      }
     },
     {
       "name": "Audio - Encode - Check if TrueHD - 6ch 🔍",
@@ -828,12 +1044,12 @@
         "greaterThan": " {{{args.variables.bitrate_audio_cutoff_6}}}",
         "lessThan": "999999999"
       },
+      "fpEnabled": true,
       "id": "O5_5gRxud",
       "position": {
-        "x": 621.7431272234357,
-        "y": 2461.8211501156256
-      },
-      "fpEnabled": true
+        "x": 1452,
+        "y": 2472
+      }
     },
     {
       "name": "Audio - Encode - Check if dts - 6ch 🔍",
@@ -846,12 +1062,12 @@
         "greaterThan": " {{{args.variables.bitrate_audio_cutoff_6}}}",
         "lessThan": "999999999"
       },
+      "fpEnabled": true,
       "id": "6pPLXnl8T",
       "position": {
-        "x": 557.4942865124375,
-        "y": 2378.662520249426
-      },
-      "fpEnabled": true
+        "x": 1392,
+        "y": 2388
+      }
     },
     {
       "name": "Audio - Encode - Check if dca - 6ch 🔍",
@@ -864,24 +1080,24 @@
         "greaterThan": " {{{args.variables.bitrate_audio_cutoff_6}}}",
         "lessThan": "999999999"
       },
+      "fpEnabled": true,
       "id": "J3rVxQFew",
       "position": {
-        "x": 494.63985174468917,
-        "y": 2294.7031751958425
-      },
-      "fpEnabled": true
+        "x": 1320,
+        "y": 2304
+      }
     },
     {
       "name": "ℹ️ Calculates stream bitrates based on library variable bitrate_audio\nLogic is Channel Count * bitrate_audio\nGenerates Variables:\nbitrate_audio_2\nbitrate_audio_6\nbitrate_audio_8",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "jaODXbb-R",
       "position": {
         "x": -41.06737551375028,
         "y": 1663.1856017693744
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Check if is_audio_lossless 🔍",
@@ -892,24 +1108,24 @@
         "variable": " {{{args.variables.is_audio_lossless}}}",
         "value": "true"
       },
+      "fpEnabled": true,
       "id": "rakfkFoMv",
       "position": {
-        "x": 304.72054651629696,
-        "y": 2631.5559478795876
-      },
-      "fpEnabled": true
+        "x": 528,
+        "y": 3012
+      }
     },
     {
       "name": "ℹ️ Checks for listed codecs and tags with is_audio_lossless",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "G9J3Uhyq9",
       "position": {
         "x": -81.17937736380114,
         "y": 1803.9011408245374
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Tag with is_audio_lossless 🧮",
@@ -919,24 +1135,24 @@
       "inputsDB": {
         "code": "module.exports = async (args) => {\n  // Define lossless audio codecs\nconst losslessCodecs = [\"alac\", \"truehd\", \"ape\", \"wmav1\", \"wmav2\", \"flac\", \"mlp\", \"shorten\", \"pcm_alaw\", \"pcm_bluray\", \"pcm_dvd\", \"pcm_f32be\", \"pcm_f32le\", \"pcm_f64be\", \"pcm_f64le\", \"pcm_mulaw\", \"pcm_s16be\", \"pcm_s16be_planar\", \"pcm_s16le\", \"pcm_s16le_planar\", \"pcm_s24be\", \"pcm_s24daud\", \"pcm_s24le\", \"pcm_s24le_planar\", \"pcm_s32be\", \"pcm_s32le\", \"pcm_s32le_planar\", \"pcm_s64be\", \"pcm_s64le\", \"pcm_s8\", \"pcm_s8_planar\", \"pcm_u16be\", \"pcm_u16le\", \"pcm_u24be\", \"pcm_u24le\", \"pcm_u32be\", \"pcm_u32le\", \"pcm_u8\", \"pcm_vidc\", \"sonicls\", \"tta\", \"wavpack\"];\n  \n  // Check if the audio codec of the file is in the lossless list\n  const streams = args.inputFileObj.ffProbeData.streams || [];\n  let isLossless = false;\n\n  for (const stream of streams) {\n    if (stream.codec_type === \"audio\" && losslessCodecs.includes(stream.codec_name.toLowerCase())) {\n      isLossless = true;\n      break;\n    }\n  }\n\n  // Tag the file as `is_audio_lossless` if it meets the condition\n  args.variables.is_audio_lossless = isLossless;\n\n  return {\n    outputFileObj: args.inputFileObj,\n    outputNumber: 1, // Continue the workflow\n    variables: args.variables, // Pass the updated variables\n  };\n};\n"
       },
+      "fpEnabled": true,
       "id": "evtek_5dF",
       "position": {
         "x": 71.44845052074976,
         "y": 1816.4073295089972
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Source bitrate too low - Skipping Audio Encode ℹ️",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "GKe-B1tIi",
       "position": {
-        "x": 330.3217512778765,
-        "y": 2866.156887680384
-      },
-      "fpEnabled": true
+        "x": 600,
+        "y": 3132
+      }
     },
     {
       "name": "Audio - Encode - Check if wav - 8ch 🔍",
@@ -949,12 +1165,12 @@
         "greaterThan": " {{{args.variables.bitrate_audio_cutoff_8}}}",
         "lessThan": "999999999"
       },
+      "fpEnabled": true,
       "id": "vDTU6jq34",
       "position": {
         "x": 246.99834185504693,
         "y": 2547.1521285842496
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Encode - Check if TrueHD - 8ch 🔍",
@@ -967,12 +1183,12 @@
         "greaterThan": " {{{args.variables.bitrate_audio_cutoff_8}}}",
         "lessThan": "999999999"
       },
+      "fpEnabled": true,
       "id": "Re_OQhamq",
       "position": {
         "x": 118.79370362742696,
         "y": 2378.0906913705826
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Encode - Check if flac - 8ch 🔍",
@@ -985,60 +1201,60 @@
         "greaterThan": " {{{args.variables.bitrate_audio_cutoff_8}}}",
         "lessThan": "999999999"
       },
+      "fpEnabled": true,
       "id": "8n-hA7TRX",
       "position": {
         "x": 181.43332377990248,
         "y": 2462.3796456330906
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "ℹ️ Check if encode/process audio or not",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "wiWMZ_QHF",
       "position": {
         "x": 113.02791234866245,
         "y": 1319.2346107619132
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - 8ch Audio found ✅",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "WWBBomMf5",
       "position": {
         "x": 2.391896047316834,
         "y": 2150.3996931431348
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "ℹ️ Calculates stream bitrates based on library variable bitrate_audio\nLogic is Channel Count * bitrate_audio",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "on9qTSrkl",
       "position": {
         "x": -319.0996822810297,
         "y": 1700.8930632942652
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "ℹ️ Calculates stream bitrates based on library variable bitrate_audio_cutoff\nLogic is Channel Count * bitrate_audio_cutoff\nGenerates Variables:\nbitrate_audio_cutoff_2\nbitrate_audio_cutoff_6\nbitrate_audio_cutoff_8",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "x2mkBBSTK",
       "position": {
         "x": 0.3404336323428936,
         "y": 1499.143477977582
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Encode - JS Calculate bitrate_audio_cutoff 🧮",
@@ -1048,24 +1264,24 @@
       "inputsDB": {
         "code": "module.exports = async (args) => {\n      // Define the base bitrate per channel from the library variable\n      const baseBitratePerChannel = parseInt(args.userVariables.library.bitrate_audio_cutoff);\n\n      // Convert from kilobits to bits\n      const baseBitratePerChannelBits = baseBitratePerChannel * 1000;\n\n      // Function to set channel bitrates\n      function setChannelBitrate(channelCount) {\n          const totalBitrate = baseBitratePerChannelBits * channelCount;\n          const variableName = `bitrate_audio_cutoff_${channelCount}`;\n          args.variables[variableName] = totalBitrate;\n          console.log(`${variableName}: ${totalBitrate} bits`);\n      }\n\n      // Set bitrates for different channel configurations\n      setChannelBitrate(1);  // For mono\n      setChannelBitrate(2);  // For stereo (2-channel)\n      setChannelBitrate(6);  // For 5.1 surround sound\n      setChannelBitrate(8);  // For 7.1 surround sound\n\n   return {\n    outputFileObj: args.inputFileObj,\n    outputNumber: 1,\n    variables: args.variables,\n  };\n};"
       },
+      "fpEnabled": true,
       "id": "ohpvGSMoD",
       "position": {
         "x": 161.90256213797767,
         "y": 1599.4885676146455
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "ℹ️ JS work in progress\nThis tags all the codecs on a list.  But I need a way to set a bitrate cutoff, so only over x bitrate.\nThat would pretty much eliminate the entire flow on the right...",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "OYLOSUi8F",
       "position": {
         "x": -196.30338087829796,
         "y": 2366.413837706146
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Is Lossless Codec? 🧮",
@@ -1075,12 +1291,12 @@
       "inputsDB": {
         "code": "module.exports = async (args) => {\n  // Define lossless audio codecs\n  const losslessCodecs = [\"flac\", \"alac\", \"dca\", \"dts\", \"wav\", \"pcm_s16le\", \"pcm_s24le\", \"pcm_f32le\", \"truehd\", \"mlp\"];\n  \n  // Check if the audio codec of the file is in the lossless list\n  const streams = args.inputFileObj.ffProbeData.streams || [];\n  let isLossless = false;\n\n  for (const stream of streams) {\n    if (stream.codec_type === \"audio\" && losslessCodecs.includes(stream.codec_name.toLowerCase())) {\n      isLossless = true;\n      break;\n    }\n  }\n\n  // Tag the file as `is_audio_lossless` if it meets the condition\n  args.variables.is_audio_lossless = isLossless;\n\n  return {\n    outputFileObj: args.inputFileObj,\n    outputNumber: 1, // Continue the workflow\n    variables: args.variables, // Pass the updated variables\n  };\n};"
       },
+      "fpEnabled": true,
       "id": "MMq1Q2ymm",
       "position": {
         "x": -195.98620590904875,
         "y": 2556.734972449613
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Encode - Check if dts - 8ch 🔍",
@@ -1093,12 +1309,12 @@
         "greaterThan": " {{{args.variables.bitrate_audio_cutoff_8}}}",
         "lessThan": "999999999"
       },
+      "fpEnabled": true,
       "id": "jqXnLzQfC",
       "position": {
         "x": 60.06349210111841,
         "y": 2294.563318557133
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Check Variable audio_1ch🔍",
@@ -1109,12 +1325,12 @@
         "variable": " {{{args.variables.user.audio_1ch}}}",
         "value": "true"
       },
+      "fpEnabled": true,
       "id": "YApKmzUde",
       "position": {
-        "x": 1496.239173174973,
-        "y": 2383.90605496967
-      },
-      "fpEnabled": true
+        "x": 3576,
+        "y": 2352
+      }
     },
     {
       "name": "Audio - Check Variable audio_2ch🔍",
@@ -1125,12 +1341,12 @@
         "variable": " {{{args.variables.user.audio_2ch}}}",
         "value": "true"
       },
+      "fpEnabled": true,
       "id": "GoTU1-6zI",
       "position": {
-        "x": 1014.3399975531293,
-        "y": 2299.5928802289864
-      },
-      "fpEnabled": true
+        "x": 2628,
+        "y": 2256
+      }
     },
     {
       "name": "Audio - Check Variable audio_6ch🔍",
@@ -1141,12 +1357,12 @@
         "variable": " {{{args.variables.user.audio_6ch}}}",
         "value": "true"
       },
+      "fpEnabled": true,
       "id": "GAnMVwvcj",
       "position": {
-        "x": 519.4407770420262,
-        "y": 2210.3829210628946
-      },
-      "fpEnabled": true
+        "x": 1344,
+        "y": 2160
+      }
     },
     {
       "name": "Audio - Set Variable audio_1ch 🎯",
@@ -1157,12 +1373,12 @@
         "variable": "audio_1ch",
         "value": "true"
       },
+      "fpEnabled": true,
       "id": "zCRCLqP6s",
       "position": {
         "x": 1172.6954836251518,
         "y": 956.9611818086278
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Set Variable audio_2ch 🎯",
@@ -1173,12 +1389,12 @@
         "variable": "audio_2ch",
         "value": "true"
       },
+      "fpEnabled": true,
       "id": "Mviaj6s0x",
       "position": {
         "x": 844.9013067968428,
         "y": 1003.9261858364116
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Set Variable audio_6ch 🎯",
@@ -1189,48 +1405,48 @@
         "variable": "audio_6ch",
         "value": "true"
       },
+      "fpEnabled": true,
       "id": "gkx2a_GOv",
       "position": {
         "x": 562.8493527910664,
         "y": 881.6661569414246
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - do_audio found, Encode Audio ✅",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "i48rest6S",
       "position": {
         "x": 162.6642112988443,
         "y": 1421.2761224953401
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "ℹ️ Ultimate goal is to only encode Lossless sources only.  But right now my filter is not perfect and will pickup a lossy codec if you set the bitrate low enough.  This may be desirable, if you want to process all codecs over a certain bitrate.\nWould love ideas on how to simplify and improve!",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "cXFQNrqFX",
       "position": {
         "x": -157.74446509679123,
         "y": 1303.0465964968023
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Do not Encode Audio ✅",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "l-FX8xwlT",
       "position": {
         "x": 355.77547093389865,
         "y": 1424.360428062668
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Go to Flow - 4 Video ➡️",
@@ -1241,24 +1457,24 @@
         "flowId": "px3PqFxVL",
         "pluginId": "2OlpiKQ6y"
       },
+      "fpEnabled": true,
       "id": "puesfFpWS",
       "position": {
         "x": 355.92507973243664,
         "y": 1517.7365119355636
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Encode - Start 🚀",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "AwkoEMHXZ",
       "position": {
         "x": 162.1527564345118,
         "y": 1523.8589080934723
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Go to Flow - Nothing to Process ➡️",
@@ -1269,12 +1485,12 @@
         "flowId": "TcG_OWsAi",
         "pluginId": "kXiy_6aLf"
       },
+      "fpEnabled": true,
       "id": "v8mlWMCB2",
       "position": {
         "x": 1547.1511236873691,
         "y": 755.7787807812055
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Go to Flow - Error Remove Track ➡️",
@@ -1285,12 +1501,12 @@
         "flowId": "TcG_OWsAi",
         "pluginId": "cpvMZJdoY"
       },
+      "fpEnabled": true,
       "id": "X4w8U3ohn",
       "position": {
         "x": 455.9481318765547,
         "y": 615.794310252305
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Go to Flow - Error Remove Track ➡️",
@@ -1301,12 +1517,12 @@
         "flowId": "TcG_OWsAi",
         "pluginId": "cpvMZJdoY"
       },
+      "fpEnabled": true,
       "id": "8-K38F9uN",
       "position": {
         "x": 729.396345829367,
         "y": 743.6908279263514
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Go to Flow - Error Remove Track ➡️",
@@ -1317,36 +1533,36 @@
         "flowId": "TcG_OWsAi",
         "pluginId": "cpvMZJdoY"
       },
+      "fpEnabled": true,
       "id": "U3tr8l162",
       "position": {
         "x": 1007.4179865864894,
         "y": 870.1854115358262
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Error Remove Track 🚨",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "cpvMZJdoY",
       "position": {
         "x": 1546.284934391056,
         "y": 601.2026716094169
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Nothing Processed ⚠️",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "kXiy_6aLf",
       "position": {
         "x": 1174.0504696744454,
         "y": 1114.5095309010442
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Remove all but 2 Channel ⏳",
@@ -1357,12 +1573,12 @@
         "pluginSourceId": "Community:Tdarr_Plugin_00td_action_remove_audio_by_channel_count",
         "channelCounts": "1"
       },
+      "fpEnabled": true,
       "id": "M_lfTMnEG",
       "position": {
         "x": 892.1249063616141,
         "y": 824.9369996914406
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Remove all but 6 Channel ⏳",
@@ -1373,24 +1589,24 @@
         "pluginSourceId": "Community:Tdarr_Plugin_00td_action_remove_audio_by_channel_count",
         "channelCounts": "2,1"
       },
+      "fpEnabled": true,
       "id": "G3A2Y8WBG",
       "position": {
         "x": 618.8549268157118,
         "y": 697.818673736858
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Not able to parse audio track Channel # ⚠️",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "nNC1PCGy8",
       "position": {
         "x": 1324.3736987613124,
         "y": 852.4195592541437
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Keep only highest Audio Channel Track - 1 🔍",
@@ -1400,48 +1616,48 @@
       "inputsDB": {
         "channelCount": "1"
       },
+      "fpEnabled": true,
       "id": "Nf68BwpQv",
       "position": {
         "x": 1197.608733221955,
         "y": 746.775319167986
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Found 1 Channel Track ✅",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "PulJXrK8M",
       "position": {
         "x": 1172.122940205876,
         "y": 867.4529154280438
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Found 2 Channel Track ✅",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "TUrnR8Exd",
       "position": {
         "x": 891.3669686631297,
         "y": 742.5889375736183
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Found 6 Channel Track ✅",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "X6KOW4tLW",
       "position": {
         "x": 619.429703983944,
         "y": 615.1547380828795
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Keep only highest Audio Channel Track - 2 🔍",
@@ -1451,12 +1667,12 @@
       "inputsDB": {
         "channelCount": "2"
       },
+      "fpEnabled": true,
       "id": "E2F9SHWF0",
       "position": {
         "x": 983.6433411357103,
         "y": 644.2672579896231
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Keep only highest Audio Channel Track - 6 🔍",
@@ -1466,96 +1682,96 @@
       "inputsDB": {
         "channelCount": "6"
       },
+      "fpEnabled": true,
       "id": "pM5Xc3f3q",
       "position": {
         "x": 733.0817448580892,
         "y": 512.2466001123512
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "ℹ️ I'm kind of brute forcing this right now, but would love to find a cleaner and simpler (more direct) way of keeping only the highest channel track.",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "8XnZGqJzO",
       "position": {
         "x": 303.9748187550033,
         "y": 323.7488731122646
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Keep only Audio Tracks listed in aud_lang - Nothing Processed ⚠️",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "yr9CMoKRz",
       "position": {
         "x": 633.3644334055409,
         "y": 245.8590815531063
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Keep only Audio Tracks listed in aud_lang OK ✅",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "cg5tVkEY8",
       "position": {
         "x": 477.993069245618,
         "y": 264.17894723719473
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "ℹ️ User config required\nVariable aud_lang for languages to keep",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "9ktggnxb7",
       "position": {
         "x": 382.2983964483042,
         "y": 138.49096059902104
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Start 🚀",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "jG9agfHPW",
       "position": {
         "x": 579.0237635475343,
         "y": -241.13454310288878
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Found 8 Channel Track ✅",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "lJ83LpCUk",
       "position": {
         "x": 415.4036224776851,
         "y": 480.73475588967403
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Keep only Audio Tracks in listed Languages ℹ️",
       "sourceRepo": "Community",
       "pluginName": "comment",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "cUkNS-hQL",
       "position": {
         "x": 554.0095395483859,
         "y": 34.541389908652036
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Remove all Languages not defined in var aud_lang ⏳",
@@ -1567,12 +1783,12 @@
         "language": "{{{args.userVariables.library.audio_language}}}",
         "commentary": "true"
       },
+      "fpEnabled": true,
       "id": "M9FxCpocJ",
       "position": {
         "x": 552.8457929271167,
         "y": 135.101908938507
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Keep only highest Audio Channel Track - 8 🔍",
@@ -1582,12 +1798,12 @@
       "inputsDB": {
         "channelCount": "8"
       },
+      "fpEnabled": true,
       "id": "ro6KgYaXg",
       "position": {
         "x": 549.3325969515968,
         "y": 377.1398702527233
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Remove all but 8 Channel ⏳",
@@ -1598,24 +1814,24 @@
         "pluginSourceId": "Community:Tdarr_Plugin_00td_action_remove_audio_by_channel_count",
         "channelCounts": "6,2,1"
       },
+      "fpEnabled": true,
       "id": "pVf0b1N0N",
       "position": {
         "x": 291.8886464344687,
         "y": 569.5398169249861
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Not able to remove audio tracks ⚠️",
       "sourceRepo": "Community",
       "pluginName": "resetFlowError",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "1Wb2ENRYt",
       "position": {
         "x": 1546.4333919162511,
         "y": 680.7716380925497
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Clean - Check var do_audio_encode 🔍",
@@ -1626,12 +1842,12 @@
         "variable": "{{{args.userVariables.library.do_audio_encode}}}",
         "value": "true"
       },
+      "fpEnabled": true,
       "id": "0SoOMHLNd",
       "position": {
         "x": 265.9941330869611,
         "y": 1336.0008468704104
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Encode - JS Calculate bitrate_audio 🧮",
@@ -1641,12 +1857,12 @@
       "inputsDB": {
         "code": "module.exports = async (args) => {\n      // Define the base bitrate per channel from the library variable\n      const baseBitratePerChannel = parseInt(args.userVariables.library.bitrate_audio);\n\n      // Convert from kilobits to bits\n      const baseBitratePerChannelBits = baseBitratePerChannel * 1000;\n\n      // Function to set channel bitrates\n      function setChannelBitrate(channelCount) {\n          const totalBitrate = baseBitratePerChannelBits * channelCount;\n          const variableName = `bitrate_audio_${channelCount}`;\n          args.variables[variableName] = totalBitrate;\n          console.log(`${variableName}: ${totalBitrate} bits`);\n      }\n\n      // Set bitrates for different channel configurations\n      setChannelBitrate(1);  // For mono\n      setChannelBitrate(2);  // For stereo (2-channel)\n      setChannelBitrate(6);  // For 5.1 surround sound\n      setChannelBitrate(8);  // For 7.1 surround sound\n\n    return {\n    outputFileObj: args.inputFileObj,\n    outputNumber: 1,\n    variables: args.variables,\n    };\n};"
       },
+      "fpEnabled": true,
       "id": "RBSADUV2i",
       "position": {
         "x": 116.60706255288386,
         "y": 1726.2666706332438
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Set Variable audio_8ch 🎯",
@@ -1657,12 +1873,12 @@
         "variable": "audio_8ch",
         "value": "true"
       },
+      "fpEnabled": true,
       "id": "vir0PusVB",
       "position": {
         "x": 266.8624515985384,
         "y": 742.35538352751
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Check Variable audio_8ch🔍",
@@ -1673,12 +1889,12 @@
         "variable": " {{{args.variables.user.audio_8ch}}}",
         "value": "true"
       },
+      "fpEnabled": true,
       "id": "gdq5cqEJ1",
       "position": {
         "x": 26.897402239981176,
         "y": 2034.0718158521943
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Encode - Check if dca - 8ch 🔍",
@@ -1691,24 +1907,24 @@
         "greaterThan": " {{{args.variables.bitrate_audio_cutoff_8}}}",
         "lessThan": "999999999"
       },
+      "fpEnabled": true,
       "id": "WfDnxH__W",
       "position": {
         "x": 2.1532225988921425,
         "y": 2211.035714282575
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Encode - Begin ffmpeg Command 📼",
       "sourceRepo": "Community",
       "pluginName": "ffmpegCommandStart",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "AVOGHm5kI",
       "position": {
         "x": 26.606142168926823,
         "y": 1942.5853723285331
-      },
-      "fpEnabled": true
+      }
     },
     {
       "name": "Audio - Encode - Encode in libopus - 8ch 📼",
@@ -1718,24 +1934,24 @@
       "inputsDB": {
         "outputArguments": "-c:v copy -c:a:0 libopus -b:a {{{args.variables.bitrate_audio_8}}} -mapping_family 1"
       },
+      "fpEnabled": true,
       "id": "rWuso2nsU",
       "position": {
-        "x": -24.258514811064515,
-        "y": 3038.8710327630674
-      },
-      "fpEnabled": true
+        "x": -24,
+        "y": 3432
+      }
     },
     {
       "name": "Audio - Encode - Execute Audio Encode ⏳",
       "sourceRepo": "Community",
       "pluginName": "ffmpegCommandExecute",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "06NkCtYpa",
       "position": {
-        "x": 1021.5418629568194,
-        "y": 3171.158019543686
-      },
-      "fpEnabled": true
+        "x": 1008,
+        "y": 4020
+      }
     },
     {
       "name": "Audio - Ensure Opus Exists 🔍",
@@ -1745,12 +1961,12 @@
       "inputsDB": {
         "codec": "opus"
       },
+      "fpEnabled": true,
       "id": "RaFVa5mwW",
       "position": {
-        "x": 1021.0915649626918,
-        "y": 3346.233661454899
-      },
-      "fpEnabled": true
+        "x": 1008,
+        "y": 4188
+      }
     },
     {
       "name": "Audio - Set Variable audio_review 🎯",
@@ -1761,24 +1977,24 @@
         "variable": "audio_review",
         "value": "true"
       },
+      "fpEnabled": true,
       "id": "IgDBEt27L",
       "position": {
-        "x": 1135.7378916798639,
-        "y": 3619.1616187749178
-      },
-      "fpEnabled": true
+        "x": 1116,
+        "y": 4464
+      }
     },
     {
       "name": "Audio - Encode Error! Skipping Audio Encode ⚠️",
       "sourceRepo": "Community",
       "pluginName": "resetFlowError",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "xrMbHQnp0",
       "position": {
-        "x": 1189.3349431321697,
-        "y": 3226.549504615778
-      },
-      "fpEnabled": true
+        "x": 1176,
+        "y": 4068
+      }
     },
     {
       "name": "Audio - Remove all Audio but opus ⏳",
@@ -1789,12 +2005,12 @@
         "pluginSourceId": "Community:Tdarr_Plugin_MP01_MichPasCleanSubsAndAudioCodecs",
         "tag_audio_codecs": "aac,ac3,eac3,dca,dts,flac,mp2,mp3,truehd,vorbis,wav,wma"
       },
+      "fpEnabled": true,
       "id": "B3TKV7LVq",
       "position": {
-        "x": 892.8748921187575,
-        "y": 3524.6180596242325
-      },
-      "fpEnabled": true
+        "x": 876,
+        "y": 4368
+      }
     },
     {
       "name": "Audio - Check is_mkv 🔍",
@@ -1804,36 +2020,36 @@
       "inputsDB": {
         "extensions": "mkv"
       },
+      "fpEnabled": true,
       "id": "J8tZK5YJe",
       "position": {
-        "x": 966.9122508294487,
-        "y": 3704.79234451867
-      },
-      "fpEnabled": true
+        "x": 948,
+        "y": 4548
+      }
     },
     {
       "name": "Prep & Clean - Run MKVPropEdit ⏳ ",
       "sourceRepo": "Community",
       "pluginName": "runMkvPropEdit",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "GhMthZgi7",
       "position": {
-        "x": 716.8285706567549,
-        "y": 3865.5342504751948
-      },
-      "fpEnabled": true
+        "x": 708,
+        "y": 4716
+      }
     },
     {
       "name": "Audio - Custom JS Calculate bitrate_audio_cutoff Error ⚠️",
       "sourceRepo": "Community",
       "pluginName": "resetFlowError",
       "version": "1.0.0",
+      "fpEnabled": true,
       "id": "k7zliIwsW",
       "position": {
         "x": 346.5213721494975,
         "y": 1609.5077674862482
-      },
-      "fpEnabled": true
+      }
     }
   ],
   "flowEdges": [
@@ -2139,13 +2355,6 @@
       "id": "o8LaAdCo-"
     },
     {
-      "source": "vDTU6jq34",
-      "sourceHandle": "2",
-      "target": "rakfkFoMv",
-      "targetHandle": null,
-      "id": "lhOkDop48"
-    },
-    {
       "source": "rakfkFoMv",
       "sourceHandle": "2",
       "target": "GKe-B1tIi",
@@ -2235,13 +2444,6 @@
       "target": "J3rVxQFew",
       "targetHandle": null,
       "id": "Ns44AGcVx"
-    },
-    {
-      "source": "rbk3cxOri",
-      "sourceHandle": "2",
-      "target": "2HfCSkIVo",
-      "targetHandle": null,
-      "id": "C8CH6qWBH"
     },
     {
       "source": "iVuMg_bBq",
@@ -2335,13 +2537,6 @@
       "id": "xKdeWXani"
     },
     {
-      "source": "v6DjtYFVh",
-      "sourceHandle": "2",
-      "target": "dzcqBzIai",
-      "targetHandle": null,
-      "id": "miUwW77DH"
-    },
-    {
       "source": "MCWHs2fBd",
       "sourceHandle": "2",
       "target": "v6DjtYFVh",
@@ -2431,13 +2626,6 @@
       "target": "_I4ev8nP_",
       "targetHandle": null,
       "id": "E20lICdDz"
-    },
-    {
-      "source": "FdEKIRBzk",
-      "sourceHandle": "2",
-      "target": "SgeLsQHv3",
-      "targetHandle": null,
-      "id": "iitD6Vt3k"
     },
     {
       "source": "0-3aRjaYS",
@@ -3096,6 +3284,286 @@
       "target": "ie0ITMYKV",
       "targetHandle": null,
       "id": "2HuTIeqvR"
+    },
+    {
+      "source": "FUW6OAXBq",
+      "sourceHandle": "1",
+      "target": "O_9LOpNF0",
+      "targetHandle": null,
+      "id": "471759kL3"
+    },
+    {
+      "source": "zmPD_WPlt",
+      "sourceHandle": "1",
+      "target": "O_9LOpNF0",
+      "targetHandle": null,
+      "id": "Er4ELVoDb"
+    },
+    {
+      "source": "nojOeTu7v",
+      "sourceHandle": "1",
+      "target": "O_9LOpNF0",
+      "targetHandle": null,
+      "id": "5FkzYkqWX"
+    },
+    {
+      "source": "zmPD_WPlt",
+      "sourceHandle": "2",
+      "target": "nojOeTu7v",
+      "targetHandle": null,
+      "id": "MEPQttAdU"
+    },
+    {
+      "source": "FUW6OAXBq",
+      "sourceHandle": "2",
+      "target": "zmPD_WPlt",
+      "targetHandle": null,
+      "id": "YqTTLunIL"
+    },
+    {
+      "source": "FdEKIRBzk",
+      "sourceHandle": "2",
+      "target": "FUW6OAXBq",
+      "targetHandle": null,
+      "id": "D9Y1NyRBR"
+    },
+    {
+      "source": "nojOeTu7v",
+      "sourceHandle": "2",
+      "target": "SgeLsQHv3",
+      "targetHandle": null,
+      "id": "r3a7WR_lR"
+    },
+    {
+      "source": "vDTU6jq34",
+      "sourceHandle": "2",
+      "target": "8TEgDjlor",
+      "targetHandle": null,
+      "id": "txH1perzW"
+    },
+    {
+      "source": "8TEgDjlor",
+      "sourceHandle": "2",
+      "target": "pjYAuZmpT",
+      "targetHandle": null,
+      "id": "Q7kh2lQKU"
+    },
+    {
+      "source": "pjYAuZmpT",
+      "sourceHandle": "2",
+      "target": "F3BstDsMD",
+      "targetHandle": null,
+      "id": "wuXUAHd8-"
+    },
+    {
+      "source": "F3BstDsMD",
+      "sourceHandle": "2",
+      "target": "rakfkFoMv",
+      "targetHandle": null,
+      "id": "Rf8ZA0IVi"
+    },
+    {
+      "source": "F3BstDsMD",
+      "sourceHandle": "1",
+      "target": "rWuso2nsU",
+      "targetHandle": null,
+      "id": "YsV0PUj4f"
+    },
+    {
+      "source": "pjYAuZmpT",
+      "sourceHandle": "1",
+      "target": "rWuso2nsU",
+      "targetHandle": null,
+      "id": "uWEMHJ15t"
+    },
+    {
+      "source": "8TEgDjlor",
+      "sourceHandle": "1",
+      "target": "rWuso2nsU",
+      "targetHandle": null,
+      "id": "WstP7Js9A"
+    },
+    {
+      "source": "rbk3cxOri",
+      "sourceHandle": "2",
+      "target": "EznYY0ZNO",
+      "targetHandle": null,
+      "id": "hAZSi1FHx"
+    },
+    {
+      "source": "EznYY0ZNO",
+      "sourceHandle": "2",
+      "target": "j6EVoCtmB",
+      "targetHandle": null,
+      "id": "h1zH4T_eL"
+    },
+    {
+      "source": "j6EVoCtmB",
+      "sourceHandle": "2",
+      "target": "n1d280_Mf",
+      "targetHandle": null,
+      "id": "g3OmVjRnH"
+    },
+    {
+      "source": "n1d280_Mf",
+      "sourceHandle": "2",
+      "target": "2HfCSkIVo",
+      "targetHandle": null,
+      "id": "e-8OgWm0G"
+    },
+    {
+      "source": "n1d280_Mf",
+      "sourceHandle": "1",
+      "target": "lbj9YbACM",
+      "targetHandle": null,
+      "id": "r7YqCAZWq"
+    },
+    {
+      "source": "j6EVoCtmB",
+      "sourceHandle": "1",
+      "target": "lbj9YbACM",
+      "targetHandle": null,
+      "id": "7VY6o7vUh"
+    },
+    {
+      "source": "EznYY0ZNO",
+      "sourceHandle": "1",
+      "target": "lbj9YbACM",
+      "targetHandle": null,
+      "id": "4kqw2Uyix"
+    },
+    {
+      "source": "v6DjtYFVh",
+      "sourceHandle": "2",
+      "target": "h2Mb0Vs27",
+      "targetHandle": null,
+      "id": "Y9_h1po9F"
+    },
+    {
+      "source": "h2Mb0Vs27",
+      "sourceHandle": "2",
+      "target": "W5UlgCm1X",
+      "targetHandle": null,
+      "id": "kSsD3PFvJ"
+    },
+    {
+      "source": "W5UlgCm1X",
+      "sourceHandle": "2",
+      "target": "_uTAAEy0r",
+      "targetHandle": null,
+      "id": "n9R2hTCzJ"
+    },
+    {
+      "source": "_uTAAEy0r",
+      "sourceHandle": "2",
+      "target": "dzcqBzIai",
+      "targetHandle": null,
+      "id": "7QRey6x1E"
+    },
+    {
+      "source": "_uTAAEy0r",
+      "sourceHandle": "1",
+      "target": "F2U_8EH4S",
+      "targetHandle": null,
+      "id": "R_Fuk6-AQ"
+    },
+    {
+      "source": "W5UlgCm1X",
+      "sourceHandle": "1",
+      "target": "F2U_8EH4S",
+      "targetHandle": null,
+      "id": "gY-xsytnm"
+    },
+    {
+      "source": "h2Mb0Vs27",
+      "sourceHandle": "1",
+      "target": "F2U_8EH4S",
+      "targetHandle": null,
+      "id": "XO1ATiBJ3"
+    },
+    {
+      "source": "F3BstDsMD",
+      "sourceHandle": "err1",
+      "target": "OrR0rXBi-",
+      "targetHandle": null,
+      "id": "wNJT-ssoq"
+    },
+    {
+      "source": "pjYAuZmpT",
+      "sourceHandle": "err1",
+      "target": "OrR0rXBi-",
+      "targetHandle": null,
+      "id": "weLF4j19C"
+    },
+    {
+      "source": "8TEgDjlor",
+      "sourceHandle": "err1",
+      "target": "OrR0rXBi-",
+      "targetHandle": null,
+      "id": "1Ru1cEYOf"
+    },
+    {
+      "source": "EznYY0ZNO",
+      "sourceHandle": "err1",
+      "target": "Ka4bqB3zT",
+      "targetHandle": null,
+      "id": "hEt4VTING"
+    },
+    {
+      "source": "n1d280_Mf",
+      "sourceHandle": "err1",
+      "target": "Ka4bqB3zT",
+      "targetHandle": null,
+      "id": "P78uPLjdW"
+    },
+    {
+      "source": "j6EVoCtmB",
+      "sourceHandle": "err1",
+      "target": "Ka4bqB3zT",
+      "targetHandle": null,
+      "id": "ObOsxW-mQ"
+    },
+    {
+      "source": "h2Mb0Vs27",
+      "sourceHandle": "err1",
+      "target": "YnarcMR5F",
+      "targetHandle": null,
+      "id": "3ts4vM9aE"
+    },
+    {
+      "source": "_uTAAEy0r",
+      "sourceHandle": "err1",
+      "target": "YnarcMR5F",
+      "targetHandle": null,
+      "id": "MoK01gyd2"
+    },
+    {
+      "source": "W5UlgCm1X",
+      "sourceHandle": "err1",
+      "target": "YnarcMR5F",
+      "targetHandle": null,
+      "id": "wvVgxlION"
+    },
+    {
+      "source": "FUW6OAXBq",
+      "sourceHandle": "err1",
+      "target": "ao4PhBnkx",
+      "targetHandle": null,
+      "id": "BGmAIoIYN"
+    },
+    {
+      "source": "zmPD_WPlt",
+      "sourceHandle": "err1",
+      "target": "ao4PhBnkx",
+      "targetHandle": null,
+      "id": "pn_Td3P9e"
+    },
+    {
+      "source": "nojOeTu7v",
+      "sourceHandle": "err1",
+      "target": "ao4PhBnkx",
+      "targetHandle": null,
+      "id": "NJSo3DJut"
     }
   ]
 }
